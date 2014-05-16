@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h3>Mangopie - Naruto</h3>
+<div class="row">
+    <small>SELECT CHAPTER:</small>
+    <select id="chapters"
+            ng-model="cur_chapter"
+            ng-options="ch[0] for ch in chapters"
+            ng-change="changeSelected()"></select>
+    <small>PAGES:</small>
+    <button ng-repeat="img in cur_chapter_images" ng-click="loadImage(this.img[1])">{{img[0]}}</button>
+</div>
+<hr />
+<center>
+    <img class="img img-responsive" ng-src="{{cur_image_src}}" alt="Select a chapter to start" />
+</center>
+<hr />
+<div class="row">
+    <small>SELECT CHAPTER:</small>
+    <select id="chapters"
+            ng-model="cur_chapter"
+            ng-options="ch[0] for ch in chapters"
+            ng-change="changeSelected()"></select>
+    <small>PAGES:</small>
+    <button ng-repeat="img in cur_chapter_images" ng-click="loadImage(this.img[1])">{{img[0]}}</button>
+</div>
