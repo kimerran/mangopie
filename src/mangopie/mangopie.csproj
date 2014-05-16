@@ -83,8 +83,10 @@
     <Content Include="static\css\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="static\css\loading-bar.min.css" />
     <Content Include="static\js\bootstrap.min.js" />
     <Content Include="static\js\app.js" />
+    <Content Include="static\js\loading-bar.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

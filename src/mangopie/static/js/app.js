@@ -1,10 +1,10 @@
-﻿window.mangopie = angular.module('MangopieApp', ['MangopieControllers', 'MangopieServices']);
+﻿window.mangopie = angular.module('MangopieApp', ['MangopieControllers', 'MangopieServices', 'chieffancypants.loadingBar']);
 
 // controller
 var MangopieControllers = angular.module('MangopieControllers', []);
 
 MangopieControllers.controller('MangopieCtrl', ['$scope', 'MangaFactory', 'ChapterFactory',
-	function ($scope, MangaFactory, ChapterFactory) {
+	function ($scope, MangaFactory, ChapterFactory, cfpLoadingBar) {
 	    $scope.chapters = [];
 	    $scope.cur_chapter = {};
 	    $scope.cur_chapter_images = {};
